@@ -221,6 +221,8 @@ a{
   position: relative;
 }
 
+
+
 /* Background shape behind phone */
 .phone-bg {
   background-color: #e0f3e9;
@@ -236,7 +238,7 @@ a{
   aspect-ratio: 3 / 4;
 }
 
-
+/* solution section  */
 .solution-section {
   background-color: #f2fbf4;
   font-family: 'Roboto', sans-serif;
@@ -476,12 +478,15 @@ a{
   padding: 60px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 
 .cta .content {
   max-width: 1200px;
   margin: 0 auto;
+  z-index: 1;
+  width: 100%;
 }
 
 .cta h1 {
@@ -502,6 +507,7 @@ a{
   margin-top: 40px;
   text-align: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .cta .metrics > div {
@@ -764,6 +770,36 @@ a{
     .step-r{
         margin-top: 40px;
     }
+
+    .dia{
+      margin-bottom: 20px;
+    }
+
+    .cta h1 {
+    font-size: 1.8rem;
+  }
+
+  .cta h4 {
+    font-size: 1.3rem;
+  }
+
+  .cta .sub-title {
+    font-size: 1rem;
+  }
+
+  .cta .overlay {
+    padding: 30px 15px;
+  }
+
+  .cta .metrics {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+.vision h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
   
   }
 
