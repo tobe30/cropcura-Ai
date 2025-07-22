@@ -25,7 +25,7 @@
 
 
   <section class="container text-center mt-5 hero-content">
-    <h6 class="text-uppercase meme" data-aos="fade-up">AI Pest Detection and Organic Crop Solutions</h6>
+    <h6 class="text-uppercase meme" data-aos="fade-up"><span id="typing-text"></span></h6>
     <h1 class="fw-bold mt-3 gradient-text text-shadow" data-aos="fade-up">Detect Pests And Diseases.<br>Get Organic Solutions For Your Crops Anytime</h1>
     <div class="d-flex justify-content-center mt-4">
       <button class="btn custom-btn">Try for Free</button>
@@ -34,16 +34,17 @@
 </div>
 
 <!-- About section -->
-<section class="about my-5">
+<section class="about">
   <div class="container text-center"  data-aos="fade-up">
     <img src="assets/images/about1.png" alt="About CropCura" class="img-fluid mb-3">
-    <p class="text-muted">The Crisis</p>
   </div>
 </section>
 
 <!-- threat section -->
 <section class="threat-section py-5">
   <div class="container" data-aos="fade-up">
+    <p class="section-subtitle text-center">The Crisis</p>
+
     <h2 class="text-center fw-bold mt-3 gradient-text text-shadow" data-aos="fade-up">
       The Silent Threat Destroying <br> Farm Profits
     </h2>
@@ -161,7 +162,7 @@
 
       <!-- Image Column -->
       <div class="col-lg-6 text-center" data-aos="fade-up">
-        <img src="assets/images/cropcura-man.png" alt="Farmer with tablet" class="img-fluid shadow">
+        <img src="assets/images/cropcura-pic.png" alt="Farmer with tablet" class="img-fluid shadow">
       </div>
 
     </div>
@@ -510,26 +511,7 @@
   </div>
 </section>
 
-<!-- Subscribe Section -->
-<section class="subscribe-section">
-  <div class="container" data-aos="fade-up">
-    <div class="row g-0 g-md-5 align-items-center">
-      <!-- Text -->
-      <div class="col-md-6" data-aos="fade-up">
-        <div class="subscribe-text">
-          <h5 class="fw-semibold text-darkgreen">Subscribe to our newsletter</h5>
-          <p class="tets small">Be the first to hear about our updates</p>
-        </div>
-      </div>
 
-      <!-- Input & Button -->
-      <div class="col-md-6 d-flex align-items-center gap-5" data-aos="fade-up">
-        <input type="email" class="form-control email-input" placeholder="Enter your email" />
-        <button class="btn subscribe-btn">Subscribe</button>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 <!-- Footer Section -->
@@ -537,7 +519,7 @@
   <div class="container py-5">
     <div class="row g-0 g-md-5 align-items-start">
       <!-- Left Image -->
-      <div class="col-md-4">
+      <div class="col-md-4 text-center mb-5">
         <img src="assets/images/footer.png" alt="Phone with Cropcura app" class="img-fluid rounded shadow-sm" />
       </div>
 
@@ -552,7 +534,7 @@
           <input type="text" class="form-control footer-input" placeholder="" />
           <label for="">Message</label>
           <textarea class="form-control footer-input" rows="3" placeholder="Write your message here..."></textarea>
-          <button type="submit" class="btn footer-btn">Subscribe to our newsletter</button>
+          <button type="submit" class="btn footer-btn">Send</button>
         </form>
       </div>
 
@@ -560,9 +542,9 @@
       <div class="col-md-4  info">
           <img class="footer-logo mt-4" src="assets/images/footer-logo.png" alt="">
         <h3 class="fw-semibold contact mb-3 mt-5">Contact Us</h3>
-        <p class="mb-2 text-white"><i class="bi bi-envelope"></i> Business@cropcura.com</p>
-        <p class="mb-2 text-white"><i class="bi bi-telephone"></i> +2349132229777</p>
-        <p class="mb-4 text-white"><i class="bi bi-geo-alt"></i> Ilewo Orile, Abeokuta, Ogun State, Nigeria</p>
+        <p class="text-white"><i class="bi bi-envelope"></i> Business@cropcura.com</p>
+        <p class="text-white"><i class="bi bi-telephone"></i> +2349132229777</p>
+        <p class="text-white"><i class="bi bi-geo-alt"></i> Ilewo Orile, Abeokuta, Ogun State, Nigeria</p>
 
         <!-- Social Icons -->
         <div class="footer-icons d-flex justify-content-end mt-auto mt-5 gap-3">
@@ -583,6 +565,21 @@
   </div>
 </footer>
 <!-- js files -->
+ <script>
+  const text = "AI Pest Detection and Organic Crop Solutions";
+let index = 0;
+
+function typeEffect() {
+    if (index < text.length) {
+        document.getElementById("typing-text").textContent += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 100);  // Adjust speed (milliseconds)
+    }
+}
+
+typeEffect();
+
+ </script>
  <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
  <script src="assets/vendor/aos/aos.js"></script>
   <script>
