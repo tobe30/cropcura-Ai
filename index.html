@@ -592,9 +592,12 @@ typeEffect();
  <script src="assets/vendor/aos/aos.js"></script>
   <script>
     AOS.init({
-      once: true,         // Animate only once
-      duration: 1000      // Animation duration in milliseconds
-    });
+  once: false,           // Animate only once
+  duration: 1000,       // Animation duration
+  easing: 'ease-in-out',// Smooth animation
+  offset: 100           // Trigger animation 100px before element is in view
+});
+
   </script>
 
 </body>
