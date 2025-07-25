@@ -102,7 +102,7 @@ a{
 
 .about img {
     max-width: 100%;
-    height: auto;
+    height: 800px;
 }
 
 .about p {
@@ -780,6 +780,11 @@ a{
     .hero-content h1{
       font-size: 1.4rem;
     }
+
+    .about img {
+    max-width: 100%;
+    height: auto;
+}
     .banner{
       min-height: 50px;
     }
