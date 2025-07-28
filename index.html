@@ -534,15 +534,16 @@
 
       <!-- Form -->
       <div class="col-md-4">
-        <form class="footer-form d-grid gap-3">
+        <form action="https://formsubmit.co/cropcuraai@gmail.com" method="POST" class="footer-form d-grid gap-3">
+          <input type="hidden" name="_captcha" value="false">
           <label for="">Name*</label>
-          <input type="text" class="form-control footer-input" placeholder="Samson Peter" />
+          <input type="text" name="name" class="form-control footer-input" placeholder="Samson Peter" />
           <label for="">Email*</label>
-          <input type="email" class="form-control footer-input" placeholder="Samson34@gmail.com*" />
+          <input type="email" name="email" class="form-control footer-input" placeholder="Samson34@gmail.com*" />
           <label for="">Country*</label>
-          <input type="text" class="form-control footer-input" placeholder="" />
+          <input type="text" name="country" class="form-control footer-input" placeholder="" />
           <label for="">Message</label>
-          <textarea class="form-control footer-input" rows="3" placeholder="Write your message here..."></textarea>
+          <textarea name="message" class="form-control footer-input" rows="3" placeholder="Write your message here..."></textarea>
           <button type="submit" class="btn footer-btn">Send</button>
         </form>
       </div>
