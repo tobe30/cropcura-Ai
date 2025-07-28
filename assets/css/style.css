@@ -760,7 +760,12 @@ a{
   font-size: 1.5rem;
 }
 
-.footer-icons i {
+.footer-icons a {
+  color: white;
+  margin-top: 30px;
+  transition: color 0.3s ease;
+}
+.footer-icons  i {
   font-size: 1.5rem;
   margin-top: 30px;
   cursor: pointer;
